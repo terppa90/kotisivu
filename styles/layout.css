@@ -1,0 +1,465 @@
+/*Oletuksena marginit nollaksi koko sivulle */
+* {
+  margin: 0em;
+}
+/*määritellään bodyn asetuksia. mm. harmaanvaalea taustaväri ja oletusfontti*/
+body {
+  background-color: lightgray;
+  text-align: left;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans',
+    'DejaVu Sans', Verdana, sans-serif;
+  font-size: 100%;
+}
+/*h1 -tason otsikon asetukset. Kokoa määritelty isommaksi suhteellisesti 
+em -avulla. Otsikolla myös varjostukset ja välistykset.
+*/
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  color: #f0ebeb;
+  font-size: 3em;
+  text-shadow: 0.0625em 0.0625em 0.125em #000000;
+  letter-spacing: 0.375em;
+  padding-top: 5em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+}
+/* alaotsikko */
+#subheader {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  text-shadow: 0.0625em 0.0625em 0.125em #000000;
+  color: rgba(240, 235, 235, 0.8);
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+/*h2 -tason otsikot ovat pienempiä kuin h1*/
+h2 {
+  font-size: 1.25em;
+  color: #f0ebeb;
+  text-shadow: 0.0625em 0.0625em 0.125em #000000;
+  padding-bottom: 0.3125em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+/*h3 -tason otsikot*/
+h3 {
+  font-size: 1em;
+  color: #f0ebeb;
+  text-shadow: 0.0625em 0.0625em 0.125em #000000;
+  padding-bottom: 0.3125em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+/*tekstien asetukset*/
+p {
+  padding-bottom: 0.3125em;
+  font-size: 1.25em;
+}
+.teksti_quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+.teksti_merienda {
+  font-family: 'Merienda', cursive;
+}
+.teksti_amiri {
+  font-family: 'Amiri', serif;
+}
+.teksti_rasa {
+  font-family: 'Rasa', serif;
+}
+/*Kuvat*/
+.omakuva {
+  width: 75%;
+  max-width: 600px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+  margin-top: 0.5em;
+  border-radius: 0.875em;
+  margin: 1em auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pork {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 1em;
+  border-radius: 0.875em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.jackson {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 1em;
+  border-radius: 0.875em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*iconiin marginia*/
+.span {
+  margin-left: 0.5em;
+}
+/*pieni icon piilotettuna portfolio välilehdellä isommalla resoluutiolla*/
+.span_small {
+  visibility: hidden;
+}
+/*määritellään kuinka leveä main -osio on koko sivusta. Korkeus automaattinen koska on riippuvainen sisällöstä.*/
+main {
+  max-width: 75%;
+  height: auto;
+  background-color: #ffffe6;
+  margin: 0em auto;
+}
+/*headeriin kuvaa ja tummennusta sekä position kuntoon*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/puu.jpg');
+  background-position: 40% 47%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/*sectionin määritykset*/
+section {
+  float: left;
+  background-color: whitesmoke;
+  width: 100%;
+  height: auto;
+  border-top: 3px solid darkgray;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+}
+/*Vasemman puolen content*/
+section.content_left {
+  float: left;
+  width: 40%;
+  max-width: 600px;
+  border: 0px;
+  background-color: #f1f1f1;
+  text-align: left;
+  align-content: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 2% 2%;
+  border-radius: 0.625em;
+  overflow: hidden;
+  display: inline;
+  box-shadow: 0.5em 1em grey;
+}
+/*Oikean puolen content*/
+section.content_right {
+  float: right;
+  width: 40%;
+  max-width: 600px;
+  border: 0px;
+  background-color: #f1f1f1;
+  text-align: left;
+  align-content: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 2% 2%;
+  border-radius: 0.625em;
+  overflow: hidden;
+  display: inline;
+  box-shadow: 0.5em 1em grey;
+}
+/*footerin määritykset*/
+footer {
+  height: 4em;
+  text-align: center;
+  align-content: center;
+  background-color: rgb(36, 32, 32);
+  color: #f7f5ee;
+  margin: 0em auto;
+  padding-top: 3em;
+  clear: left;
+  overflow: hidden;
+}
+/*iconi oikealle reunalle*/
+.icon {
+  float: right;
+}
+/*pieni laptop -icon piilotettuna kun sivuston leveys on 768px tai enemmän*/
+.icon_small {
+  display: none;
+}
+/*navigaatiopalkki*/
+.ul_nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+.ul_nav > li {
+  float: left;
+}
+.ul_nav > li a:hover,
+.dropdown:hover {
+  background-color: rgb(231, 231, 231);
+}
+/*portfolio -välilehden lista*/
+.ul_portfolio {
+  background-color: #f1f1f1;
+  list-style-type: square;
+}
+/*NAVBAR HARRASTUKSET ALAVALIKKO*/
+li a,
+.dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+}
+/*HARRASTUKSET VALIKON VÄRI HIIREN KURSORIN OLLESSA PÄÄLLÄ*/
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgba(255, 255, 255, 0.13);
+}
+/*Aktiivisen välilehden asetukset*/
+li a.active {
+  background-color: rgb(231, 231, 231);
+  color: white;
+  font-weight: bold;
+  text-shadow: 0.0625em 0.0625em 0.125em #000000;
+}
+li.dropdown {
+  display: inline-block;
+}
+/*ALAVALIKON ASETUKSET*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/*ALAVALIKON LINKKIEN ASETUKSET*/
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: rgb(231, 231, 231);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*****************************MEDIA QUERIES*****************************/
+/*Nämä määritykset tulevat voimaan, kun leveys on 992px tai alle 992px*/
+@media (max-width: 992px) {
+  main {
+    max-width: 90%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  #subheader {
+    font-size: 1em;
+  }
+}
+/*Nämä määritykset tulevat voimaan, kun leveys on 768px tai alle 768px*/
+@media (max-width: 768px) {
+  main {
+    max-width: 90%;
+  }
+  /*Kuva itsestä piiloon kun leveys laskee 768px tai alle 768px*/
+  .omakuva {
+    display: none;
+  }
+  /*Headerin fonttia pienemmäksi*/
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 0.875em;
+  }
+  /*Kappaleiden fonttia hieman pienemmäksi (1.25em -> 1em)*/
+  p {
+    font-size: 1em;
+  }
+  /*Etusivun tietokone -icon muuttaa kokoa pienemmäksi, 
+  joten suurempi icon otetaan pois käytöstä*/
+  .icon {
+    display: none;
+  }
+  /*Pienempi icon otetaan käyttöön*/
+  .icon_small {
+    display: inline-block;
+    float: right;
+  }
+}
+/*Tästä alaspäin on määritelty asetuksia, jotka otetaan käyttöön 
+  alle 480px näkymässä parempaa mobiili/tabletti käyttökokemusta 
+  silmälläpitäen*/
+@media (max-width: 480px) {
+  main {
+    max-width: 100%;
+  }
+  /*Otetaan pikkuiconit käyttöön*/
+  .span_small {
+    visibility: visible;
+    display: inline;
+    float: none;
+    margin-left: 0.25em;
+  }
+  /*Isommat iconit piiloon*/
+  .span {
+    display: none;
+  }
+  /*headerin otsikko keskelle ja koko 150%*/
+  h1 {
+    text-align: center;
+    font-size: 150%;
+    padding-left: 0;
+  }
+  /*kokoja pienemmäksi*/
+  h2 {
+    font-size: 120%;
+  }
+  h3 {
+    font-size: 100%;
+  }
+  /*galleria piiloon mobiiliin siirryttäessä */
+  .gallery {
+    display: none !important;
+  }
+  /*subheader keskelle mobiilinäkymässä*/
+  #subheader {
+    width: 100%;
+    right: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10%;
+    text-align: center;
+    align-content: center;
+    display: block;
+  }
+  /*Säädetään 480px tai alle navigaatiopalkin asetuksia, 
+    jotta saadaan linkit allekkain*/
+  li a,
+  .dropbtn {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    align-content: center;
+    justify-content: center;
+  }
+  li.dropdown {
+    display: block;
+  }
+  .ul_nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+  }
+  .ul_nav > li {
+    float: none;
+  }
+  section.content_left {
+    float: none;
+    width: 96%;
+    height: auto;
+    border: 0px solid #ac9675;
+    background-color: #f1f1f1;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    margin: 0% 0%;
+    padding: 2% 2%;
+    border-radius: 0em;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0em 0em grey;
+  }
+  section.content_right {
+    float: none;
+    width: 96%;
+    height: auto;
+    border: 0px solid #ac9675;
+    background-color: #f1f1f1;
+    text-align: left;
+    align-content: center;
+    margin: 0% 0%;
+    padding: 2% 2%;
+    border-radius: 0em;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0em 0em grey;
+  }
+}
+/*GRID, jota käytetään portfoliossa*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4em;
+  background-color: #f1f1f1;
+  padding: 4em;
+}
+.grid-item {
+  background-color: #ebebeb;
+  text-align: left;
+  padding: 1.5em;
+  font-size: 1em;
+  border-radius: 0.625em;
+  box-shadow: 0.5em 1em grey;
+}
+.grid-container > div > .ul_portfolio {
+  background-color: #ebebeb;
+  list-style-type: square;
+}
+@media (max-width: 768px) {
+  /* sisältö allekkain */
+  .grid-container {
+    display: block;
+    padding: 0em;
+  }
+  /*margineja säädetään*/
+  .grid-item {
+    margin: 1em;
+    margin-bottom: 2em;
+  }
+  /*iconit piiloon*/
+  .icon_small {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  /*margineja säädetään*/
+  .grid-container > div {
+    margin: 0em 0em;
+  }
+  .grid-item {
+    border-radius: 0em;
+    box-shadow: 0em 0em grey;
+    margin: 0em;
+    margin-bottom: 0em;
+    border-bottom: 3px solid darkgray;
+  }
+}

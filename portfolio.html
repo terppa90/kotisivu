@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="FI">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rasa&display=swap"
+      rel="stylesheet"
+    />
+    <!--Headerin fontti-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!--Subheaderin fontti-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amiri&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <!--METATIEDOT-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Tero Kaihulan web-sivusto/portfolio" />
+    <meta name="keywords" content="HTML, CSS, Kaihula, Kotisivu, Portfolio" />
+    <meta name="author" content="Tero Kaihula" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tero Kaihula Kotisivu/Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/layout.css" />
+  </head>
+  <body>
+    <!-- Tästä alkaa header -->
+    <header>
+      <h1>Tero Kaihula</h1>
+      <p id="subheader">Frontend developer</p>
+    </header>
+    <!-- header loppuu -->
+    <!--Navbar alkaa-->
+    <nav class="topnav" id="myTopnav">
+      <ul class="ul_nav">
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i> Etusivu</a>
+        </li>
+        <!--Harrastukset alavalikko-->
+        <li class="dropdown">
+          <a class="dropbtn"><i class="fas fa-pen"></i> Harrastukset</a>
+          <div class="dropdown-content">
+            <a href="harrastus1.html">Kitaran soitto</a>
+            <a href="harrastus2.html">Musiikki</a>
+            <a href="harrastus3.html">Liikunta</a>
+            <a href="harrastus4.html">Ruoanlaitto</a>
+          </div>
+        </li>
+        <li>
+          <a class="active" href="portfolio.html"
+            ><i class="fas fa-book"></i> Portfolio</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!--Navbar loppuu-->
+    <!-- Tästä alkaa main -->
+    <main>
+      <section>
+        <!-- Tästä alkaa section -->
+        <div class="grid-container">
+          <div class="grid-item">
+            <h2>
+              Työhistoria
+              <!--iconit-->
+              <span class="span" style="color: #575757"
+                ><i class="fas fa-briefcase fa-2x"></i
+              ></span>
+              <span class="span_small" style="color: #575757"
+                ><i class="fas fa-briefcase"></i
+              ></span>
+            </h2>
+            <h3>Kesätyöt</h3>
+            <ul class="ul_portfolio">
+              <li>
+                <p class="teksti_amiri">Elonen Oy Leipomo, 6/2015-9/2015</p>
+              </li>
+            </ul>
+            <h3>Harjoittelut</h3>
+            <ul class="ul_portfolio">
+              <li>
+                <p class="teksti_amiri">Tarvikekeskus Jämsä, 12/2012-2/2013</p>
+              </li>
+              <li>
+                <p class="teksti_amiri">Tmi Kaihula, 9/2017-11/2017</p>
+              </li>
+            </ul>
+            <br />
+          </div>
+          <div class="grid-item">
+            <h2>
+              Opinnot
+              <span class="span" style="color: #575757"
+                ><i class="fas fa-user-graduate fa-2x"></i
+              ></span>
+              <span class="span_small" style="color: #575757"
+                ><i class="fas fa-user-graduate"></i
+              ></span>
+            </h2>
+            <h3>Tutkinnot</h3>
+            <ul class="ul_portfolio">
+              <li>
+                <p class="teksti_amiri">
+                  Tieto- ja viestintätekniikan perustutkinto, jämsän
+                  ammattiopisto, 2011
+                </p>
+              </li>
+            </ul>
+            <h3>Avoin AMK</h3>
+            <ul class="ul_portfolio">
+              <li>
+                <p class="teksti_amiri">XR-kehittäjän kursseja (2020)</p>
+              </li>
+              <li>
+                <p class="teksti_amiri">
+                  Web-kehittäjän opintokokonaisuus (2021)
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="grid-item">
+            <h2>
+              Taidot
+              <span class="span" style="color: #575757"
+                ><i class="fas fa-quote-right fa-2x"></i
+              ></span>
+              <span class="span_small" style="color: #575757"
+                ><i class="fas fa-quote-right"></i
+              ></span>
+            </h2>
+            <h3>Ohjelmointi</h3>
+            <ul class="ul_portfolio">
+              <li>
+                <p class="teksti_amiri">C++</p>
+              </li>
+              <li>
+                <p class="teksti_amiri">JavaScript</p>
+              </li>
+              <li>
+                <p class="teksti_amiri">TypeScript</p>
+              </li>
+            </ul>
+            <h3>Muut</h3>
+            <ul class="ul_portfolio">
+              <li>
+                <p class="teksti_amiri">3D-mallinnus</p>
+              </li>
+              <li>
+                <p class="teksti_amiri">Git</p>
+              </li>
+              <li>
+                <p class="teksti_amiri">Tietokannat (MySQL, MongoDB, Redis)</p>
+              </li>
+              <li>
+                <p class="teksti_amiri">Docker</p>
+              </li>
+              <li>
+                <p class="teksti_amiri">HTML/CSS</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- section loppuu -->
+    </main>
+    <!-- main loppuu -->
+    <footer>
+      <!-- Tästä alkaa footer -->
+      Yhteystiedot: N0465@student.jamk.fi, 0443622268
+    </footer>
+    <!-- footer loppuu -->
+  </body>
+  <!--body loppuu-->
+</html>

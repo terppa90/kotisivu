@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="FI">
+  <head>
+    <!--Ulkoiset kirjasintyypit. Google Fonts.-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <!--Headerin fontti-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!--Subheaderin fontti-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome iconit-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <!--METATIEDOT-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Tero Kaihulan web-sivusto/portfolio" />
+    <meta name="keywords" content="HTML, CSS, Kaihula, Kotisivu, Portfolio" />
+    <meta name="author" content="Tero Kaihula" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Sivuston otsikko joka näkyy välilehdellä-->
+    <title>Tero Kaihulan Kotisivu/Etusivu</title>
+    <!--linkki tyylitiedostoon-->
+    <link rel="stylesheet" type="text/css" href="styles/layout.css" />
+  </head>
+  <body>
+    <!-- Tästä alkaa header -->
+    <header>
+      <h1>Tero Kaihula</h1>
+      <p id="subheader">Frontend developer</p>
+    </header>
+    <!-- header loppuu -->
+    <!--Navbar alkaa-->
+    <nav class="navbar">
+      <ul class="ul_nav">
+        <li>
+          <a class="active" href="index.html"
+            ><i class="fas fa-home"></i> Etusivu</a
+          >
+        </li>
+        <!--Harrastukset alavalikko-->
+        <li class="dropdown">
+          <a class="dropbtn"><i class="fas fa-pen"></i> Harrastukset</a>
+          <div class="dropdown-content">
+            <a href="harrastus1.html">Kitaran soitto</a>
+            <a href="harrastus2.html">Musiikki</a>
+            <a href="harrastus3.html">Liikunta</a>
+            <a href="harrastus4.html">Ruoanlaitto</a>
+          </div>
+        </li>
+        <li>
+          <a href="portfolio.html"><i class="fas fa-book"></i> Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Navbar loppuu-->
+    <main>
+      <!-- Tästä alkaa main -->
+      <section>
+        <!-- Tästä alkaa section -->
+        <section class="content_left">
+          <!--Tästä alkaa vasemman puolen section-->
+          <h2>Tietoa</h2>
+          <p class="teksti_quicksand">
+            Nimeni on Tero, olen 30-vuotias mies joka opiskelee Jyväskylän
+            avoimessa ammattikorkeakoulussa web- ja ohjelmistotekniikkaa.
+          </p>
+          <br />
+          <p class="teksti_quicksand">
+            Tällä sivustolla pääset tutustumaan hieman minuun ja harrastuksiini
+            sekä löydät tietoa esim. työhistoriastani ja opinnoistani.
+          </p>
+          <!--Kuva itsestä etusivulla-->
+          <img class="omakuva" src="./images/tero.png" alt="Kuva minusta" />
+        </section>
+        <!--Vasen section loppuu-->
+        <section class="content_right">
+          <!--Tästä alkaa oikean puolen section-->
+          <h2>Opinnoista</h2>
+          <p class="teksti_quicksand">
+            Olen valmistunut tieto- ja viestintätekniikan perustutkintoon vuonna
+            2011. Tämän lisäksi olen opiskellut Jyväskylän avoimen
+            ammattikorkeakoulun kautta XR-kehittäjän ja web-kehittäjän opintoja.
+          </p>
+          <br />
+          <p class="teksti_quicksand">
+            Ohjelmointi on kiinnostanut mahdollisuutena luoda uraa ja koin että
+            tämä on loistava väylä ja mahdollisuus raottaa hieman verhoa
+            koodauksen maailmaan ja päästä kokeilemaan olisiko minusta
+            ohjelmoijaksi sekä mahdollisesti päästä opiskelemaan varsinaiseen
+            tutkinto-ohjelmaan.
+          </p>
+          <!--Täällä on käytetty Font Awesome -iconeja. 
+                Kaksi eri kokoista jotta voi vaihtaa sivuston leveyden vaihtuessa 
+                media queryssä toisen piiloon.-->
+          <span class="icon">
+            <i class="fas fa-laptop-code fa-4x"></i>
+          </span>
+          <span class="icon_small">
+            <i class="fas fa-laptop-code fa-3x"></i>
+          </span>
+        </section>
+      </section>
+      <!-- section loppuu -->
+    </main>
+    <!-- main loppuu -->
+    <footer>
+      <!-- Tästä alkaa footer -->
+      Yhteystiedot: N0465@student.jamk.fi, 0443622268
+    </footer>
+    <!-- footer loppuu -->
+  </body>
+  <!--body loppuu-->
+</html>

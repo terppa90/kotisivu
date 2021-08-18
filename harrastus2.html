@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <!--Ulkoiset kirjasintyypit. Google Fonts.-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <!--Headerin fontti-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!--Subheaderin fontti-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome iconit-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <!--METATIEDOT-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Tero Kaihulan web-sivusto/portfolio" />
+    <meta name="keywords" content="HTML, CSS, Kaihula, Kotisivu, Portfolio" />
+    <meta name="author" content="Tero Kaihula" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tero Kaihulan Kotisivu/Musiikki</title>
+    <link rel="stylesheet" type="text/css" href="styles/layout.css" />
+  </head>
+  <body>
+    <!-- Tästä alkaa header -->
+    <header>
+      <h1>Tero Kaihula</h1>
+      <p id="subheader">Frontend developer</p>
+    </header>
+    <!-- header loppuu -->
+    <!--Navbar alkaa-->
+    <nav>
+      <ul class="ul_nav">
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i> Etusivu</a>
+        </li>
+        <!--Harrastukset alavalikko-->
+        <li class="dropdown">
+          <a class="active dropbtn"><i class="fas fa-pen"></i> Harrastukset</a>
+          <div class="dropdown-content">
+            <a href="harrastus1.html">Kitaran soitto</a>
+            <a href="harrastus2.html">Musiikki</a>
+            <a href="harrastus3.html">Liikunta</a>
+            <a href="harrastus4.html">Ruoanlaitto</a>
+          </div>
+        </li>
+        <li>
+          <a href="portfolio.html"><i class="fas fa-book"></i> Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Navbar loppuu-->
+    <main>
+      <!-- Tästä alkaa main -->
+      <section>
+        <!-- Tästä alkaa section -->
+        <section class="content_left">
+          <!--Tästä alkaa vasemman puolen section-->
+          <h2>
+            Musiikki
+            <span class="span" style="color: #575757"
+              ><i class="fas fa-music fa-2x"></i
+            ></span>
+            <span class="span_small" style="color: #575757"
+              ><i class="fas fa-music"></i
+            ></span>
+          </h2>
+          <p class="teksti_quicksand">
+            Soittamisen lisäksi olen myös innokas musiikin kuuntelija ja tykkään
+            aika-ajoin käydä festivaaleilla ja konserteissa.<br /><br />
+            Olen myös ollut Tuska -festivaaleilla työntekijänä talkoohommissa
+            vuonna 2018 sekä nuorempana Himos Juhannus -festivaaleilla
+            palkallisena.
+          </p>
+        </section>
+        <!--Vasemman puolen section loppuu-->
+        <section class="content_right">
+          <!--Tästä alkaa oikean puolen section-->
+          <h3>Festivaalit</h3>
+          <p class="teksti_quicksand">
+            Ensimmäinen festivaalikokemukseni sijoittuu vuoteen 2006, jolloin
+            kävin yhdessä veljieni kanssa Sauna Open Air -festivaaleilla. Tämän
+            jälkeen olen vieraillut Nummirock -festivaaleilla vuonna 2015,
+            kahdesti Tuska -festivaaleilla vuonna 2017 ja 2018, kerran John
+            Smith -festivaaleilla vuonna 2018 ja hieman rock/metalli genrestä
+            poiketen Jysäri -festivaaleilla vuonna 2015.
+          </p>
+          <h3>Konsertit</h3>
+          <p class="teksti_quicksand">
+            Yksittäisillä keikoilla itseäni viihdyttämässä olen käynyt jo niin
+            lukuisia kertoja, että laskuissa on ollut mahdotonta pysyä mukana.
+            Ylivoimaisesti useimmiten lokaationa on kuitenkin ollut paikallinen,
+            Jyväskylän Lutakossa sijaitseva rock-klubi Tanssisali Lutakko.
+          </p>
+        </section>
+        <!--Oikean puolen section loppuu-->
+      </section>
+      <!-- section loppuu -->
+    </main>
+    <!-- main loppuu -->
+    <footer>
+      <!-- Tästä alkaa footer -->
+      Yhteystiedot: N0465@student.jamk.fi, 0443622268
+    </footer>
+    <!-- footer loppuu -->
+  </body>
+  <!--body loppuu-->
+</html>

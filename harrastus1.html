@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <!--Ulkoiset kirjasintyypit. Google Fonts.-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <!--Headerin fontti-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!--Subheaderin fontti-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome iconit-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <!--METATIEDOT-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Tero Kaihulan web-sivusto/portfolio" />
+    <meta name="keywords" content="HTML, CSS, Kaihula, Kotisivu, Portfolio" />
+    <meta name="author" content="Tero Kaihula" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tero Kaihulan Kotisivu/Kitaran soitto</title>
+    <link rel="stylesheet" type="text/css" href="styles/layout.css" />
+  </head>
+  <body>
+    <!--Tästä alkaa header-->
+    <header>
+      <h1>Tero Kaihula</h1>
+      <p id="subheader">Frontend developer</p>
+    </header>
+    <!--Header loppuu-->
+    <!--Navbar alkaa-->
+    <nav class="topnav" id="myTopnav">
+      <ul class="ul_nav">
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i> Etusivu</a>
+        </li>
+        <!--Harrastukset alavalikko-->
+        <li class="dropdown">
+          <a class="active dropbtn"><i class="fas fa-pen"></i> Harrastukset</a>
+          <div class="dropdown-content">
+            <a href="harrastus1.html">Kitaran soitto</a>
+            <a href="harrastus2.html">Musiikki</a>
+            <a href="harrastus3.html">Liikunta</a>
+            <a href="harrastus4.html">Ruoanlaitto</a>
+          </div>
+        </li>
+        <li>
+          <a href="portfolio.html"><i class="fas fa-book"></i> Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Navbar loppuu-->
+    <main>
+      <!--Tästä alkaa main-->
+      <section>
+        <!--Tästä alkaa vasemman puolen section-->
+        <section class="content_left">
+          <h2>
+            Kitaran soitto
+            <span class="span" style="color: #575757"
+              ><i class="fas fa-guitar fa-2x"></i
+            ></span>
+            <span class="span_small" style="color: #575757"
+              ><i class="fas fa-guitar"></i
+            ></span>
+          </h2>
+          <p class="teksti_quicksand">
+            Kitaransoiton aloitin yläasteikäisenä, ollessani noin 15-vuotias.
+            Soitannalliset intressini keskittyvät pääsääntöisesti
+            rock-pohjaiseen/raskaampaan musiikkiin, mutta vaihtelun vuoksi
+            tykkään toisinaan käydä myös mukavuusalueeni ulkopuolella.
+            <br /><br />
+            Äskettäin ostin itselleni uuden kitaran ja aloin viritellä
+            harrastusta uudelleen parin vuoden tauon jälkeen. Tällä hetkellä en
+            omista akustista kitaraa, mutta ehkä tulevaisuudessa.
+          </p>
+        </section>
+        <!--Vasemman puolen section loppuu-->
+        <section class="content_right">
+          <!--Tästä alkaa oikean puolen section-->
+          <h2>Kitarat</h2>
+          <ul class="ul_portfolio">
+            <li>
+              <p class="teksti_quicksand">Jackson RRX24 Rhoads Black</p>
+            </li>
+            <li>
+              <p class="teksti_quicksand">
+                Jackson Randy Rhoads (tarkasta mallista ei tietoa)
+              </p>
+            </li>
+          </ul>
+          <img class="jackson" src="./images/jaska2.jpg" alt="Kuva kitarasta" />
+        </section>
+        <!--Oikean puolen section loppuu-->
+      </section>
+      <!--Section loppuu-->
+    </main>
+    <!--Main loppuu-->
+    <footer>
+      <!--Tästä alkaa footer-->
+      Yhteystiedot: N0465@student.jamk.fi, 0443622268
+    </footer>
+    <!--Footer loppuu-->
+  </body>
+  <!--Body loppuu-->
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <!--Ulkoiset kirjasintyypit. Google Fonts.-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <!--Headerin fontti-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!--Subheaderin fontti-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome iconit-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <!--METATIEDOT-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Tero Kaihulan web-sivusto/portfolio" />
+    <meta name="keywords" content="HTML, CSS, Kaihula, Kotisivu, Portfolio" />
+    <meta name="author" content="Tero Kaihula" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tero Kaihulan Kotisivu/Liikunta</title>
+    <link rel="stylesheet" type="text/css" href="styles/layout.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <!--LIGHTBOX-->
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <!--LIGHTBOX-->
+  </head>
+  <body>
+    <!-- Tästä alkaa header -->
+    <header>
+      <h1>Tero Kaihula</h1>
+      <p id="subheader">Frontend developer</p>
+    </header>
+    <!-- header loppuu -->
+    <!--Navbar alkaa-->
+    <nav>
+      <ul class="ul_nav">
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i> Etusivu</a>
+        </li>
+        <!--Harrastukset alavalikko-->
+        <li class="dropdown">
+          <a class="active dropbtn"><i class="fas fa-pen"></i> Harrastukset</a>
+          <div class="dropdown-content">
+            <a href="harrastus1.html">Kitaran soitto</a>
+            <a href="harrastus2.html">Musiikki</a>
+            <a href="harrastus3.html">Liikunta</a>
+            <a href="harrastus4.html">Ruoanlaitto</a>
+          </div>
+        </li>
+        <li>
+          <a href="portfolio.html"><i class="fas fa-book"></i> Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Navbar loppuu-->
+    <main>
+      <!-- Tästä alkaa main -->
+      <section>
+        <!-- Tästä alkaa section -->
+        <section class="content_left">
+          <!--Tästä alkaa vasemman puolen section-->
+          <h2>
+            Liikunta
+            <span class="span" style="color: #575757"
+              ><i class="fas fa-running fa-2x"></i
+            ></span>
+            <span class="span_small" style="color: #575757"
+              ><i class="fas fa-running"></i
+            ></span>
+          </h2>
+          <p class="teksti_quicksand">
+            Pyrin liikkumaan säännöllisesti. Kesäisin liikuntamuoto saattaa
+            painottua enemmän ulkona lenkkeilyyn ja talvella saliharjoitteluun.
+            Viime aikoina mausteena soppaan on tullut myös fresbeegolf.
+          </p>
+          <h3>Fresbeegolf</h3>
+          <p class="teksti_quicksand">
+            Viimeisen parin vuoden sisään kuvioihin on astunut mukaan myös
+            fresbeegolf. Olenkin tutustunut Jyväskylän alueen ratoihin ja
+            löytänyt omat suosikkini.
+          </p>
+        </section>
+        <!--Vasemman puolen section loppuu-->
+        <section class="content_right">
+          <!--Tästä alkaa oikean puolen section-->
+          <h3>Lenkkeily</h3>
+          <p class="teksti_quicksand">
+            Lenkkeilyä olen harrastanut jo pisemmän aikaa, välillä
+            säännöllisemmin ja toisinaan epäsäännöllisemmin. Talvisin lenkkeily
+            on painottunut hieman enemmän kävelylenkkeihin kuin hölkkäämiseen.
+            Keväästä syksyyn olen pyrkinyt pitämään yllä vähintään kerran
+            viikkoon lenkkeilytahtia hölkkäämisen muodossa.
+          </p>
+          <h3>Luontopolut</h3>
+          <p class="teksti_quicksand">
+            Kesällä 2020 aktiviteetteihin lukeutui myös luontopolkujen lomassa
+            ajatuksien tuulettaminen. Kävimmekin läpäisemässä Jyväskylän
+            Laajavuoren luontopolun sekä Vaajakosken Kanavuoren luontopolun.
+          </p>
+        </section>
+        <!--Oikean puolen section loppuu-->
+      </section>
+      <section>
+        <!--Kuvagalleria luontopolulta-->
+        <div class="gallery">
+          <h2 id="lpolku">Kuvia Luontopoluilta</h2>
+          <a href="images/luontopolku1.jpg" data-lightbox="mygallery"
+            ><img src="images/luontopolku1.jpg" alt="kivi" style="width: 25%"
+          /></a>
+          <a href="images/luontopolku2.jpg" data-lightbox="mygallery"
+            ><img
+              src="images/luontopolku2.jpg"
+              alt="kaatunut puu"
+              style="width: 25%"
+          /></a>
+          <a href="images/luontopolku3.jpg" data-lightbox="mygallery"
+            ><img src="images/luontopolku3.jpg" alt="kanto" style="width: 25%"
+          /></a>
+          <a href="images/luontopolku4.jpg" data-lightbox="mygallery"
+            ><img
+              src="images/luontopolku4.jpg"
+              alt="vesipisara"
+              style="width: 25%"
+          /></a>
+          <a href="images/luontopolku5.jpg" data-lightbox="mygallery"
+            ><img
+              src="images/luontopolku5.jpg"
+              alt="pitkospuut"
+              style="width: 25%"
+          /></a>
+          <a href="images/luontopolku6.jpg" data-lightbox="mygallery"
+            ><img src="images/luontopolku6.jpg" alt="sieniä" style="width: 25%"
+          /></a>
+        </div>
+      </section>
+      <!-- section loppuu -->
+    </main>
+    <!-- main loppuu -->
+    <footer>
+      <!-- Tästä alkaa footer -->
+      Yhteystiedot: N0465@student.jamk.fi, 0443622268
+    </footer>
+    <!-- footer loppuu -->
+  </body>
+  <!--body loppuu-->
+</html>
